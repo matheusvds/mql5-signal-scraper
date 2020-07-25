@@ -23,7 +23,7 @@ for pageNumber in range(1, amountOfPages):
 
     for signal in list:
         name = signal.find('span', { 'class' : 'name' }).text
-        price = signal.find('div', { 'class' : 'col-price' }).text ##.replace('USD', '')
+        price = signal.find('div', { 'class' : 'col-price' }).text
         growth = signal.find('div', { 'class' : 'col-growth' }).text
         monthGrowth = signal.find('div', { 'class' : 'col-growth' }).get('title', 'no title')
         subs = signal.find('div', { 'class' : 'col-subscribers' }).text
